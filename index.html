@@ -8,9 +8,9 @@
     <script defer src="app.js"></script>
   </head>
   <body>
-    <canvas id="jsCanvas" class="canvas"> </canvas>
+    <canvas width="700px" height="700px" id="jsCanvas" class="canvas"> </canvas>
     <div class="controls">
-      <div class="controls__range">
+      <div class="controls__range jsRange">
         <input
           type="range"
           id="jsRange"
@@ -21,19 +21,47 @@
         />
       </div>
       <div class="controls__btns">
-        <button id="jsMode">Fill</button>
-        <button id="jsSave">Save</button>
+        <button class="controls__btns--fill" id="jsMode">Fill</button>
+        <button class="controls__btns--paint" id="jsMode">PAINT</button>
+        <button class="controls__btns--save" id="jsSave">Save</button>
       </div>
       <div class="controls__colors" id="jsColors">
-        <div class="controls__color" style="background-color: #2f3640"></div>
-        <div class="controls__color" style="background-color: #f5f6fa"></div>
-        <div class="controls__color" style="background-color: #c23616"></div>
-        <div class="controls__color" style="background-color: #e84118"></div>
-        <div class="controls__color" style="background-color: #fbc531"></div>
-        <div class="controls__color" style="background-color: #4cd137"></div>
-        <div class="controls__color" style="background-color: #00a8ff"></div>
-        <div class="controls__color" style="background-color: #273c75"></div>
-        <div class="controls__color" style="background-color: #8c7ae6"></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #2f3640"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #f5f6fa"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #c23616"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #e84118"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #fbc531"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #4cd137"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #00a8ff"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #273c75"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #8c7ae6"
+        ></div>
       </div>
     </div>
   </body>
